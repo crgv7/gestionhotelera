@@ -1,0 +1,79 @@
+{% extends "base.html" %}
+{% load crispy_forms_tags %}
+{% block title %}Añadir Reservacion{% endblock %}
+
+{% block content %}
+ <div class=" container-fluid  mt-5 pt-5">
+ <form method="post">{% csrf_token %}
+  <div class="container mt-4 rounded-3 bg-success text-light w-50"  data-aos="fade-right" data-aos-duration="1000" data-aos-delay="50" data-aos-once="true">
+   <div class="row">
+          <div class="row text-center pt-3 fs-3 "><p class="text-light fs-2">Crear reservacion</p></div>
+          <form>
+              <div class="row">
+                  <div class="col-6 mt-5">
+                      <div class="ms-5">
+
+                      
+                      <div class="mb-3 w-50">
+                            {{form.nombre|as_crispy_field}}
+                        </div>
+                        <div class="mb-3 w-50">
+                          {{form.apellidos |as_crispy_field}}
+                        </div>
+                         
+
+                        <div class="mb-3 w-50">
+                            {{form.correo |as_crispy_field}}
+                        </div>
+                        <div class="mb-3 w-50">
+                            {{form.ci |as_crispy_field}}
+                        </div>
+                      </div>
+                  </div>
+
+                  <div class="col-6">
+                    <div class="ms-5">
+                    <div class=" row mt-3 w-50">
+                      <div class="d-flex justify-content-center">
+                          <span class= "">{{form.fecha_entrada|as_crispy_field}}</span>
+                      </div>
+                    </div>
+                      <div class=" row mt-3 w-50">
+                        <div class="d-flex justify-content-center">
+                            <span class= "">{{form.fecha_salida|as_crispy_field}}</span>
+                        </div>
+                        <div class="d-flex justify-content-center">
+                            <span class= "">{{form.pais|as_crispy_field}}</span>
+                        </div>
+
+                          <div class="d-flex justify-content-center">
+                            <span class= "">{{form.codigo|as_crispy_field}}</span>
+                        </div>
+
+                      </div>                
+                    </div>
+                    <div class="d-flex justify-content-start ms-5">
+                      <span class= "">{{form.hotel|as_crispy_field}}</span>
+                  </div>
+                     </div>
+                  </div>
+            </form>
+
+            <div class="container p-4">
+              <div class="row d-flex justify-content-end mt-4">
+
+              <a href="/reservacion/panel/" type="button" class="btn btn-light m-2 w-25">Cancelar</a>
+              <button type="submit" class="btn btn-primary m-2 w-25">Actualizar</button>
+              </div>
+
+
+            </div>
+
+
+
+
+      </div>
+  </div>
+</form>
+</div>
+{% endblock %}

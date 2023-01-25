@@ -1,0 +1,82 @@
+/*
+Lo nuevo
+*/
+#imagenHoteles{
+  height: 275px;
+}
+
+#carr{
+  height:600px;
+}
+
+#naveg{
+  height: 100px;
+}
+
+#logo{
+  width: 55px;
+  margin-right: 15px;
+  margin-bottom: 20px;
+}
+/*
+Fin de lo nuevo
+*/
+
+/*
+Estilo del Login
+*/
+#contenedor{
+  
+  text-align: center;
+  height: 380px;
+  width: 500px;
+  background-color: white;
+  margin: auto;
+  margin-top: 100px;
+  border-radius: 30px;
+  border-width: 10px;
+  border: 5px #2eca6a solid ;
+  padding-bottom: 20px;
+}
+#contenedor1{
+  
+  text-align: center;
+  height: 620px;
+  width: 500px;
+  background-color: white;
+  margin: auto;
+  margin-top: 10px;
+  border-radius: 30px;
+  border-width: 10px;
+  border: 5px #2eca6a solid ;
+  padding-bottom: 20px;
+}
+#botonLogin{
+  margin-top: 40px;
+  margin-right: 50px;
+  border: 2px #2eca6a solid;
+  background-color: white;
+  border-radius: 50px;
+  float: right;
+}
+.formulario{
+  width: 400px;
+  margin: auto;
+  border-radius: 30px;
+  border-width: 10px;
+  border: 3px #2eca6a solid;
+  margin-top: 30px;
+}
+#enlace{
+  margin-top: 40px;
+}
+.warnings{
+  width: 200px;
+  text-align: center;
+  margin: auto;
+  padding-top: 40px;
+  color: red;
+}
+/*
+Fin del Estilo del Login
+*/

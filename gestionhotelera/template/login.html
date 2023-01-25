@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+{% load static %}
+{% load crispy_forms_tags %}
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Gestión Hotelera</title> 
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="/media/img/logo2.jpg" rel="icon">
+  <link href="/media/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="{% static 'assets/vendor/animate.css/animate.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="{% static 'assets/css/style.css' %}" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: EstateAgency - v4.9.1
+  * Template URL: https://bootstrapmade.com/real-estate-agency-bootstrap-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+  
+</head>
+<body style="background-image: url(/media/img/316572.jpg);">
+
+    <div id="contenedor">
+    
+        
+            <p id="texto" class="navbar-brand text-brand" >Iniciar<span class="color-b"> Sesión</span></p>
+            <div class="form-group" >
+          <form  class="d-flex justify-content-center ms-5 w-75"action="" method="POST" id="">{% csrf_token %}
+            <div class="form"> 
+            
+            	{{form|crispy}}
+            
+            <div id="enlace">
+            <label>¿Aún no tienes cuenta?
+            </label><a href="/registro/">Registrate aquí</a>
+           </div>
+            <button class="bg-primary btn text-light mt-3" id="" type="submit">Aceptar</button>
+            <p class="warnings" id="warnings"></p>
+           </div>
+          </form>
+    </div>
+    
+    <script src="{% static 'assets/js/login.js' %}" ref="text/javascript"></script>
+</body>
+</html>
+
+
+
+
